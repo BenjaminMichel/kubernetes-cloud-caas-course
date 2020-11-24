@@ -1,0 +1,17 @@
+docker build -t containerhub_bmichel .
+docker run -it -d --rm --name container_hub -p 666:80 containerhub_bmichel
+
+
+Head html page : AFFORDABLE SHIPPING CONTAINERS AT COMPETITIVE RATES.
+
+Modification de la page :
+
+docker exec -it container_hub /bin/sh
+
+Voir le png dans le dossier
+
+docker commit -a "BMICHEL" container_hub containerhub_bmichel:1.1
+
+REPOSITORY                                                                                       TAG                                  IMAGE ID            CREATED             SIZE
+containerhub_bmichel                                                                             1.1                                  959f71760601        20 seconds ago      11.3MB
+containerhub_bmichel                                                                             latest                               0b1de0caf2e1        7 minutes ago       11.2MB

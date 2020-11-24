@@ -1,0 +1,4 @@
+docker build -t goform_bmichel .
+docker run -it -d --rm --name goform_bmichel -p 9090:9090 goform_bmichel
+
+Browser : 127.0.0.1:9090 -> Hello Aidodev!
